@@ -18,7 +18,7 @@ namespace BaseballApp.Controllers
         // GET: HallOfFames
         public ActionResult Index()
         {
-            return View(db.HallOfFame.SqlQuery("SELECT TOP 50 * FROM[dbo].[HallOfFame] order by votes DESC;"));
+            return View(db.HallOfFame.OrderByDescending(x => x.votes).Take(50));
             //return View(db.HallOfFame.ToList());
         }
 
