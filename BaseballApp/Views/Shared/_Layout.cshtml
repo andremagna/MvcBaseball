@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - BaseballApp</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                @Html.ActionLink("BaseballApp", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <!-- title/method/controller -->
+                    <@*li>@Html.ActionLink("Home", "Index", "Home")</li>*@
+                    <li>
+                         @Html.ActionLink("All Star", "Index", "AllstarFulls")
+                         <img style="width: 65px; height:65px; margin-bottom:12%; margin-left: 5%" src="~/Content/images/allStars.png"/>
+                    </li>
+                    <li>
+                        @Html.ActionLink("Hall of Fames", "Index", "HallOfFames")
+                        <img style="width: 65px; height:65px; margin-bottom:12%; margin-left: 20%" src="~/Content/images/hallOfFame.png" />
+                    </li>
+                     <li>
+                         @Html.ActionLink("XXX", "Index", "HOF")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Under 30", "Index", "Players")
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - BaseballApp</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

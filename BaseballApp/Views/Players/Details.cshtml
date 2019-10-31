@@ -1,0 +1,274 @@
+﻿@model DAL.Players
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Players</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.playerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.managerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.managerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hofID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hofID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthMonth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthMonth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthCountry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthCountry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deathYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deathYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deathMonth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deathMonth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deathDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deathDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deathCountry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deathCountry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deathState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deathState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deathCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deathCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nameFirst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameFirst)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nameLast)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameLast)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nameNote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameNote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nameGiven)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameGiven)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nameNick)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameNick)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.throws)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.throws)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.debut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.debut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.finalGame)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.finalGame)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.college)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.college)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lahman40ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lahman40ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lahman45ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lahman45ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.retroID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.retroID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.holtzID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.holtzID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bbrefID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bbrefID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.lahmanID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

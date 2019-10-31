@@ -1,0 +1,58 @@
+﻿@model DAL.AllstarFull
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AllstarFull</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.gameID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gameID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teamID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teamID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lgID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lgID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.startingPos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startingPos)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

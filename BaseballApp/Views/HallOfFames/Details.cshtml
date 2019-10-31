@@ -1,0 +1,66 @@
+﻿@model DAL.HallOfFame
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HallOfFame</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ballots)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ballots)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.needed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.needed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.votes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.votes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.inducted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inducted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.needed_note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.needed_note)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

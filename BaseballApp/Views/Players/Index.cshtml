@@ -1,0 +1,102 @@
+﻿@model IEnumerable<DAL.Players>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    body {
+        font-family: Verdana, sans-serif;
+        background-color: #1c1c1c
+    }
+</style>
+
+<table class="table" style="margin-top: 8%; background-color: whitesmoke">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nameFirst)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nameLast)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.birthDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.birthMonth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.birthYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.birthCountry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.birthState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.birthCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.height)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.throws)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.debut)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nameFirst)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nameLast)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.birthDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.birthMonth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.birthYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.birthCountry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.birthState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.birthCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.height)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.throws)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.debut)
+            </td>
+        </tr>
+    }
+
+</table>

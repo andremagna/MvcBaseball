@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "HOFIndex";
+}
+
+<h2 style="margin-top: 20%">HOFIndex</h2>
+
+@foreach (var ft in Model.HallOfFameDTO)
+{
+    <tr>
+
+        <td>@ft._name</td>
+        <td>@ft.Head</td>
+        <td>@ft.Customer</td>
+        <td>@ft.Item</td>
+        //~66 another fields
+    </tr>

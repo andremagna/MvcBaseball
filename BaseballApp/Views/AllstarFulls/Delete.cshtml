@@ -1,0 +1,64 @@
+﻿@model DAL.AllstarFull
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AllstarFull</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.gameID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gameID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teamID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teamID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lgID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lgID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.startingPos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startingPos)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
